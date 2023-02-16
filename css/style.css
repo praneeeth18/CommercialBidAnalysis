@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* ||VARIABLES */
+
+:root {
+  /* FONTS */
+  --FF: "Nunito", sans-serif;
+  --FF-HEADINGS: "Fugaz one", cursive;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BODY-BGCOLOR: #fff;
+  --HEADER-BGCOLOR: #000;
+  --HEADER-COLOR: #fff;
+
+  /* BORDERS */
+  --BORDERS: 1px solid black;
+  --BORDER-RADIUS: 15px;
+
+  /* STANDARD PADDING */
+  --PADDING-TB: 0.25em;
+  --PADDING-SIDE: 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* ||GENERAL STYLES */
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+}
+
+body {
+  background-color: var(--BODY-BGCOLOR);
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: var(--BORDERS);
+  border-right: var(--BORDERS);
+}
+
+h1,
+h3 {
+  font-family: var(--FF-HEADINGS);
+  letter-spacing: 0.1em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* ||HEADER */
+
+header {
+  text-align: center;
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+/* || MAIN */
+
+main {
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+main section {
+  scroll-margin-top: 6.5rem;
+  margin: var(--MARGIN);
+}
+
+.details label {
+  font-weight: bold;
+}
+
+.particulars label {
+  font-weight: bold;
+}
+
+.formsandformats label {
+  font-weight: bold;
+}
+
+.becfinancial label {
+  font-weight: bold;
+}
+
+.others label {
+  font-weight: bold;
+}
+
+button {
+  padding: 0.5em;
+  border-radius: var(--BORDER-RADIUS);
+  font-weight: bold;
+}
+
+.remarks textarea {
+  padding: 0.5em 0;
+  border-radius: var(--BORDER-RADIUS);
+  border-width: 2px;
+  width: 100%;
+}

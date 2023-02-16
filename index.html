@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Commercial Bid Analysis</title>
+  </head>
+  <body>
+    <header>
+      <h1>COMMERCIAL BID ANALYSIS</h1>
+    </header>
+    <main>
+        <section class="details">
+          <p>
+            <label for="bidnumber">Bid Number:</label>
+            <input type="text" name="bidnumber" id="bidnumber" required/>
+          </p>
+          <p>
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject" />
+          </p>
+          <p>
+            <label for="modeoftendering">Mode Of Tendering:</label>
+            <input type="text" name="modeoftendering" id="modeoftendering" />
+          </p>
+          <p>
+            <label for="bidduedate">Bid Due Date:</label>
+            <input type="text" name="bidduedate" id="bidduedate" />
+          </p>
+        </section>
+
+        <section class="particulars">
+          <h3>PARTICULARS</h3>
+          <p>
+            <label for="mse">DOCUMENT W.R.T MSE BENEFIT:</label>
+            <p class="inputField">
+              <input type="file" id="mseFile" name="mseFile" value="MSE" />
+            </p>
+          </p>
+          <p>
+            <label for="status">STATUS OF BIDDER(AS PER ABOVE DOCUMENT):</label>
+            <p class="inputField">
+              <input type="checkbox" id="status" name="micro" value="micro" />
+              <label for="micro">MICRO</label>
+              <input type="checkbox" id="status" name="small" value="small" />
+              <label for="small">SMALL</label>
+            </p>
+          </p>
+          <p>
+            <label for="startup">STARTUP:</label>
+          </p>
+          <p>
+            <label for="emd">EMD:</label>
+          </p>
+        </section>
+
+        <section class="formsandformats">
+          <h3>FORMS AND FORMATS</h3>
+          <p>
+            <label for="f1">F-1: BIDDER GENERAL INFORMATION:</label>
+            <p class="inputField">
+              <input type="checkbox" id="f1" name="f1" value="yes" />
+              <label for="f1">UPLOADED</label>
+              <input type="checkbox" id="f1" name="f1" value="no" />
+              <label for="f1">NOT UPLOADED</label>
+              <input type="file" id="f1File" name="f1File">
+            </p>
+          </p>
+          <p>
+            <label for="f5">FORMAT-F-5: AGREED TERMS AND CONDITIONS(ATC):</label>
+            <p class="inputField">
+              <input type="checkbox" id="f5" name="f5" value="yes" />
+              <label for="f5">UPLOADED</label>
+              <input type="checkbox" id="f5" name="f5" value="no" />
+              <label for="f5">NOT UPLOADED</label>
+              <input type="file" id="f5files" name="f5File">
+            </p>
+          </p>
+          <p>
+            <label for="lbu">LAND BORDER UNDERTAKING:</label><br />
+            <p class="inputField">
+              <input type="checkbox" id="lbu" name="lbu" value="yes" />
+              <label for="lbu">UPLOADED</label>
+              <input type="checkbox" id="lbu" name="lbu" value="no" />
+              <label for="lbu">NOT UPLOADED</label>
+              <input type="file" id="lbuFile" name="lbuFile">
+            </p>
+          </p>
+        </section>
+
+        <section class="becfinancial">
+          <h3>BEC FINANCIAL</h3>
+          <p class="inputField">
+            <input
+              type="checkbox"
+              id="becfinancial"
+              name="becfinancial"
+              value="yes"
+            />
+            <label for="becfinancial">APPLICABLE</label>
+            <input
+              type="checkbox"
+              id="becfinancial"
+              name="becfinancial"
+              value="no"
+            />
+            <label for="becfinancial">NOT APPLICABLE</label>
+          </p>
+        </section>
+
+        <section class="others">
+          <h3>OTHERS</h3>
+          <p>
+            <label for="banninglist">BANNING LIST AVAILABLE IN INTRANET:</label>
+            <p class="inputField">
+                <input
+                type="checkbox"
+                id="banninglist"
+                name="banninglist"
+                value="yes"
+               />
+                <label for="banninglist">YES</label>
+                <input
+                type="checkbox"
+                id="banninglist"
+                name="banninglist"
+                value="no"
+               />
+              <label for="banninglist">NO</label>
+            </p>
+          </p>
+          <p>
+            <label for="commercialacceptability">COMMERCIAL ACCEPTABILITY:</label>
+            <p class="inputField">
+              <input
+              type="checkbox"
+              id="commercialacceptability"
+              name="commercialacceptability"
+              value="yes"
+              />
+              <label for="commercialacceptability">ACCEPTED</label>
+              <input
+                type="checkbox"
+                id="commercialacceptability"
+                name="commercialacceptability"
+                value="no"
+              />
+              <label for="commercialacceptability">NOT ACCEPTED</label>
+            </p>
+          </p>
+        </section>
+        <section class="remarks">
+          <p>
+            <h3>Remarks</h3>
+            <textarea
+              name="remarks"
+              id="remarks"
+              cols="30"
+              rows="10"
+              placeholder="Type your remarks here"
+            ></textarea>
+          </p>
+        </section>
+        <button id="upload">UPLOAD</button>
+        <button id="readData">READ</button>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
